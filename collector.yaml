@@ -69,24 +69,11 @@ exporters:
     metrics_endpoint: https://ingest.us1.signalfx.com/v2/datapoint/otlp
     logs_endpoint:    https://ingest.us1.signalfx.com/v3/event
     headers:
-      X-SF-Token: 1jqFGfuQd4lGy84koNNmNA
+      X-SF-Token: <your ingestion token>
   otlphttp:
     traces_endpoint:  https://pdx-sls-agent-api.saas.appdynamics.com
     headers:
-      x-api-key: b21aef0d4d5241660633bf833337b6a4ad40e27e5668b9c7f96a0ea4b704bbd2
-
-  # Send everything to Splunk Observability Cloud over OTLP/HTTP
-  # otlphttp/splunk:
-  #   traces_endpoint: https://ingest.us1.signalfx.com/v2/trace/otlp
-  #   metrics_endpoint: https://ingest.us1.signalfx.com/v2/datapoint/otlp
-  #   logs_endpoint: https://ingest.us1.signalfx.com/v3/event
-  #   headers:
-  #     X-SF-Token: 1jqFGfuQd4lGy84koNNmNA       # your Splunk ingest token
-
-  # # Helpful during bring-up; remove later if noisy
-  # logging:
-  #   loglevel: info
-  # Replaces deprecated "logging" exporter
+      x-api-key: <App Dynamics api key>
   debug:
     verbosity: detailed   # or: normal | detailed
 

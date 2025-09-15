@@ -94,13 +94,13 @@ LLM evaluation scoring observability
 
 **FastAPI** — Backend API
 
-**Streamlit **— Frontend chat interface
+**Streamlit** — Frontend chat interface
 
-**Milvus **— Vector Database for embeddings
+**Milvus** — Vector Database for embeddings
 
-**Redis **— Cache and chat history store
+**Redis** — Cache and chat history store
 
-**Attu **— Web UI for Milvus
+**Attu** — Web UI for Milvus
 
 **Redis Insight** — Web UI for Redis
 
@@ -108,13 +108,16 @@ LLM evaluation scoring observability
 
 ## 🖼️ Screenshots / Demo
 
-Add your UI screenshots or demo recordings here.
-
 Streamlit UI (Chat Interface)
+<img width="1512" height="823" alt="image" src="https://github.com/user-attachments/assets/4869e725-0be0-487f-9876-7f184c628623" />
 
 Redis Insight
+<img width="1512" height="823" alt="image" src="https://github.com/user-attachments/assets/f33e36cb-373f-48e6-af76-d42c44adb674" />
+<img width="1512" height="823" alt="image" src="https://github.com/user-attachments/assets/176fcc7b-584b-409b-8e28-ab206936282a" />
 
 Attu (Milvus Web UI)
+<img width="1512" height="823" alt="image" src="https://github.com/user-attachments/assets/74724979-ecc6-428b-a9c4-664fa81cf130" />
+<img width="1512" height="823" alt="image" src="https://github.com/user-attachments/assets/368076fd-83d4-4917-b465-a020d009a52a" />
 
 ## 📌 Notes
 

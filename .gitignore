@@ -1,0 +1,38 @@
+cat > .gitignore <<'EOF'
+# OS / editor
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.ipynb_checkpoints/
+
+# Virtual envs
+venv/
+.venv/
+env/
+.gptenv/
+gpt/
+gpt2/
+
+# Env & local config
+*.local
+*.secret
+*.key
+
+# Data & artifacts
+*.db
+*.sqlite*
+*.log
+
+# Docker build junk
+docker/*.log
+docker/*-data/
+EOF
+

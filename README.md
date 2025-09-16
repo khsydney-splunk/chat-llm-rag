@@ -39,7 +39,12 @@ source <your_full_path_to>/<venv_name>/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
-### 3. Run required Docker containers
+### 3. Edit .env File to configure OTEL backend API key
+```bash
+SPLUNK_API_KEY=<Splunk O11y Cloud Ingestion Key>
+AppD_API_Key=<App Dynamics Api Key>
+```
+### 4. Run required Docker containers
 #### A) OpenTelemetry Collector
 ```bash
 docker run -d --name otelcol \
@@ -50,7 +55,7 @@ docker run -d --name otelcol \
 ```
 #### B) Attu (Web UI for Milvus Vector DB)
 ```bash
-docker run --rm -d -p 8001:3000 --name attu zilliz/attu:latest
+docker run -d -p 8001:3000 --name attu zilliz/attu:latest
 ```
 #### C) Milvus
 ```bash

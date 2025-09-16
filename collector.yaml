@@ -69,11 +69,11 @@ exporters:
     metrics_endpoint: https://ingest.us1.signalfx.com/v2/datapoint/otlp
     logs_endpoint:    https://ingest.us1.signalfx.com/v3/event
     headers:
-      X-SF-Token: <your ingestion token>
+      X-SF-Token: {$SPLUNK_API_KEY}
   otlphttp:
     traces_endpoint:  https://pdx-sls-agent-api.saas.appdynamics.com
     headers:
-      x-api-key: <App Dynamics api key>
+      x-api-key: {$AppD_API_Key}
   debug:
     verbosity: detailed   # or: normal | detailed
 
